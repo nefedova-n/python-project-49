@@ -21,8 +21,7 @@ def even_game():
         print("Question: " + str(random_number))
         answer = prompt.string("Your answer: ") 
         if answer != result:
-            print("'" + answer + "'" + ' is wrong answer ;(.\n '
-            'Correct answer was ' + "'" + result + "'")
+            print("'" + answer + "'" + ' is wrong answer ;(. Correct answer was ' + "'" + result + "'")
             print("Let's try again, " + name + "!")
             break
         else:
