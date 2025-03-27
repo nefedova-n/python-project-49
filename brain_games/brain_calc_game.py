@@ -1,6 +1,7 @@
-import random 
+import random
 
 import prompt
+
 
 def calc_game(): 
 
@@ -24,7 +25,8 @@ def calc_game():
         print("Question: " + fullname)
         answer = prompt.string("Your answer: ")
         if answer != str(result):
-            print("'" + answer + "'" + ' is wrong answer ;(. Correct answer was ' + "'" + str(result) + "'")
+            print("'" + answer + "'" + " is wrong answer ;(.")
+            print("Correct answer was " + "'" + result + "'")
             print("Let's try again, " + name + "!")
             break
         else:
