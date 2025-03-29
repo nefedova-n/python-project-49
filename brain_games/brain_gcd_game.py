@@ -1,28 +1,22 @@
-import random
+import math
+from random import randint
 
 import prompt
 
 
-def calc_game(): 
-    # engine_greeting()
+def gcd_game():
     print("Welcome to the Brain Games!")
     name = prompt.string("May I have your name? ")    
     print("Hello, " + name + "!")
-    print("What is the result of the expression?")
+    print("Find the greatest common divisor of given numbers.")
     count = 0
     success = 0
     while count < 3:
-        sub = " - "
-        sum = " + "
-        mult = " * "
-        int_one = random.randint(1, 10)
-        int_two = random.randint(1, 10)
-        list = [sub, sum, mult]
-        random.shuffle(list)
-        random_expression = random.choice(list)
-        expression = str(int_one) + random_expression + str(int_two)
-        result = eval(expression)
-        print("Question: " + expression)
+        int_one = randint(1, 10)
+        int_two = randint(1, 100)
+        result = math.gcd(int_one, int_two)
+        integers = str(int_one) + " " + str(int_two)
+        print("Question: " + integers)
         answer = prompt.string("Your answer: ")
         if answer != str(result):
             print("'" + answer + "'" + " is wrong answer ;(.")
@@ -35,6 +29,3 @@ def calc_game():
             success += 1        
     if success == 3:
         print("Congratulations, " + name + "!") 
-
-
-calc_game()
