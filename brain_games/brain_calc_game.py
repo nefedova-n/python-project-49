@@ -35,6 +35,3 @@ def calc_game():
             success += 1        
     if success == 3:
         print("Congratulations, " + name + "!") 
-
-
-calc_game()
