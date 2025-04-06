@@ -1,8 +1,10 @@
-from brain_games.brain_progression_game import progression_game
+from games import brain_progression_game
+
+from brain_games import engine
 
 
 def main():
-    progression_game()
+    engine.run(brain_progression_game)
     
 
 if __name__ == "__main__":
