@@ -24,4 +24,4 @@
 2. Выполните команду make install
 3. Запустите в терминале нужную игру, например, brain-calc
 
-[![asciicast](https://asciinema.org/a/715037.svg)](https://asciinema.org/a/715059)
+[![asciicast](https://asciinema.org/a/715059.svg)](https://asciinema.org/a/715059)
