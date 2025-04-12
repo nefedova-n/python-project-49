@@ -13,5 +13,5 @@ def get_round():
     random.shuffle(list)
     random_expression = random.choice(list)
     question = str(int_one) + random_expression + str(int_two)
-    correct_answer = eval(question)
+    correct_answer = str(eval(question))
     return question, correct_answer
