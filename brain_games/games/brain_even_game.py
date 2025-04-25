@@ -9,7 +9,7 @@ def is_even(number):
         result = True
     else: 
         result = False
-    return result 
+    return result
 
 
 def get_round():
