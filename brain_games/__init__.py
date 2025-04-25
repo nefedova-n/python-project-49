@@ -1,4 +1,4 @@
-from games import (
+from brain_games.games import (
     brain_calc_game,
     brain_even_game,
     brain_gcd_game,
