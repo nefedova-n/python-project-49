@@ -6,14 +6,14 @@ DESCRIPTION = 'Answer "yes" if the number is even, otherwise answer "no".'
 def is_even(number):
     result = '' 
     if number % 2 == 0:
-        result = 'yes'
+        result = True
     else: 
-        result = 'no'
-    return result
+        result = False
+    return result 
 
 
 def get_round():
-    random_number = randint(1, 10)
+    random_number = randint(1, 90)
     question = str(random_number)
-    correct_answer = is_even(random_number)
+    correct_answer = 'yes' if is_even(random_number) else 'no'
     return question, correct_answer
