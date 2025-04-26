@@ -4,12 +4,7 @@ DESCRIPTION = 'Answer "yes" if the number is even, otherwise answer "no".'
 
 
 def is_even(number):
-    result = '' 
-    if number % 2 == 0:
-        result = True
-    else: 
-        result = False
-    return result
+    return True if number % 2 == 0 else False
 
 
 def get_round():

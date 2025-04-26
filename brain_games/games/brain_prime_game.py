@@ -16,7 +16,7 @@ def is_prime(number):
 
 
 def get_round():
-    random_number = randint(3, 100)
+    random_number = randint(3, 1000)
     question = str(random_number)
     correct_answer = 'yes' if is_prime(random_number) else 'no'
     return question, correct_answer
