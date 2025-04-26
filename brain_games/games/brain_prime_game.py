@@ -18,7 +18,7 @@ def is_prime(number):
             else:
                 div_number -= 1
             result = True
-    return result
+    return result 
 
 
 def get_round():
