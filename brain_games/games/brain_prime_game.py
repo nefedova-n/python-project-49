@@ -4,8 +4,6 @@ DESCRIPTION = 'Answer "yes" if given number is prime. Otherwise answer "no".'
 
 
 def is_prime(number):
-    if number == 2:
-        return True
     if number % 2 == 0:
         return False
     div_number = number // 2
@@ -18,7 +16,7 @@ def is_prime(number):
 
 
 def get_round():
-    random_number = randint(2, 1000)
+    random_number = randint(3, 100)
     question = str(random_number)
     correct_answer = 'yes' if is_prime(random_number) else 'no'
     return question, correct_answer
