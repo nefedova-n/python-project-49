@@ -4,21 +4,17 @@ DESCRIPTION = 'Answer "yes" if given number is prime. Otherwise answer "no".'
 
 
 def is_prime(number):
-    result = ''
     if number == 2:
-        result = True
-    elif number % 2 == 0:
-        result = False 
-    else:
-        div_number = number // 2
-        while div_number > 1:
-            if number % div_number == 0:
-                result = False
-                break
-            else:
-                div_number -= 1
-            result = True
-    return result 
+        return True
+    if number % 2 == 0:
+        return False
+    div_number = number // 2
+    while div_number > 1:
+        if number % div_number == 0:
+            return False
+        else:
+            div_number -= 1
+    return True 
 
 
 def get_round():
